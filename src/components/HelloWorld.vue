@@ -12,6 +12,9 @@
 
     <button @click.once="OnBtnClick">Increase</button>
     <p>{{ number }}</p>
+
+    <h1>Hi, my name is {{ 'anouk'.toUpperCase() }}</h1>
+    <h1>{{ sayHello() }}</h1>
   </div>
 </template>
 
@@ -28,6 +31,9 @@ export default {
     },
     OnBtnClick() {
       this.number = this.number + 1;
+    },
+    sayHello() {
+      return 'HELLO';
     },
   },
   data() {
